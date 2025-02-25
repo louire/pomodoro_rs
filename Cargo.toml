@@ -1,0 +1,27 @@
+[package]
+name = "pomodoro_rs"
+version = "0.1.0"
+edition = "2024"
+description = "A simple CLI Pomodoro timer application written in Rust"
+authors = ["Loui Recio github.com/louire"]
+license = "MIT"
+repository = "https://github.com/louire/pomodoro_rs"
+readme = "README.md"
+keywords = ["pomodoro", "productivity", "timer", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+chrono = "0.4"
+ctrlc = "3.4"
+notify-rust = "4.9"
+colored = "2.0"
+rand = "0.8"
+dialoguer = "0.10"
+indicatif = "0.17"
+dirs = "5.0"
+rodio = "0.17"
+
+[[bin]]
+name = "pomodoro_rs"
+path = "src/main.rs"
